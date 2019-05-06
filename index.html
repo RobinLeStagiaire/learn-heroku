@@ -51,6 +51,26 @@
        data-visible-properties='["name","intent"]'
        data-selection-required='true'
        data-min-length='1'
-       name='suggest_questions'
+       name='suggest_questions'>
+     </input>
+     <input type='text'
+       placeholder='Programming language name'
+       class='flexdatalist'
+       data-min-length='1'
+       list='languages'
+       name='language'>
+     </input>
+<datalist id="languages">
+    <option value="PHP">PHP</option>
+    <option value="JavaScript">JavaScript</option>
+    <option value="Cobol">Cobol</option>
+    <option value="C#">C#</option>
+    <option value="C++">C++</option>
+    <option value="Java">Java</option>
+    <option value="Pascal">Pascal</option>
+    <option value="FORTRAN">FORTRAN</option>
+    <option value="Lisp">Lisp</option>
+    <option value="Swift">Swift</option>
+</datalist>
 </body>
 </html>
