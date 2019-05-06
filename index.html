@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
+    <link href="css/jquery.flexdatalist.min.css" rel="stylesheet" type="text/css">
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
@@ -23,6 +24,7 @@
   </head>
 
   <body>
+    <script src="css/flexdatalist.min.js"></script>
     <div margin="auto" id="info">
       <p> Le déploiement sur Skype for Business arrive bientôt! Je dois le déployer avec Azure, si vous pouvoir m'aider, contactez-moi ;) </p>
       <a href="mailto:robin.fanfan.berger@accenture.com">Contacter le développeur</a>
@@ -40,5 +42,15 @@
       id="cai-webchat"
     >
     </script>
+    <br>
+    <input type='text'
+       placeholder='Write your question'
+       class='flexdatalist'
+       data-data='data/questions.json'
+       data-search-in='name'
+       data-visible-properties='["name","intent"]'
+       data-selection-required='true'
+       data-min-length='1'
+       name='suggest_questions'
 </body>
 </html>
